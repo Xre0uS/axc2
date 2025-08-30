@@ -196,3 +196,17 @@ type TargetData struct {
 	Owned    bool   `json:"t_owned"`
 }
 
+=======
+type FileHostingData struct {
+	FileId     string `json:"fh_file_id"`
+	Filename   string `json:"fh_filename"`
+	Uri        string `json:"fh_uri"`
+	MimeType   string `json:"fh_mime_type"`
+	BindHost   string `json:"fh_bind_host"`
+	BindPort   string `json:"fh_bind_port"`
+	FilePath   string `json:"fh_file_path"`
+	FileSize   int64  `json:"fh_file_size"`
+	Status     string `json:"fh_status"`
+	CreateDate int64  `json:"fh_create_date"`
+	User       string `json:"fh_user"`
+}
